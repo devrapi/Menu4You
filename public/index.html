@@ -9,23 +9,23 @@
 </head>
 <body class="bg-orange-100">
 
-<main class="bg-orange-100 mx-4 md:mx-15 lg:mx-36 xl:mx-52 relative  ">
+<main class="bg-orange-100 mx-4 md:mx-15 lg:mx-36 xl:mx-52 relative ">
     <!-- Navbar -->
 
 <!-- This is  ad -->
-<div class="fixed inset-0  items-center justify-center hidden bg-black bg-opacity-50 " id="popup">
-  <div class="relative bg-white rounded-lg shadow-lg p-6 w-4/5  md:w-1/3 animate-fade-in">
+<div class="container fixed inset-0  items-center justify-center hidden bg-black bg-opacity-50 " id="popup">
+  <div class="absolute bg-white rounded-lg shadow-lg p-6   md:w-1/3 animate-fade-in">
     <span class="absolute top-2 right-2 text-gray-500 cursor-pointer" id="close" style="font-size: 4rem;">&times;</span>
-    <img src="img/menu4you_ads.png" alt="Ad Image" class=" mb-4 rounded">
-    <h2 class="text-3xl font-bold mb-4">Special Offer!</h2>
-    <p class="mb-4">Don't miss out on our exclusive deal</p>
+    <img src="img/menu4you_ads.png" alt="Ad Image" class=" mb-4 rounded h-auto w-auto">
+    <h2 class="text-3xl font-bold mb-4 md:hidden">Special Offer!</h2>
+    <p class="mb-4 md:hidden">Don't miss out on our exclusive deal</p>
 
   </div>
 </div>
 
 
     
-   <nav class="bg-orange-100 p-3 ">
+   <nav class="container bg-orange-100 p-3 ">
     <div class="container mx-auto px-1 flex flex-row md:flex-row justify-center  md:items-center ">
         <div class="flex items-center mr-5">
             <img src="img/newlogo-removebg-preview.png" alt="Logo" class="h-auto w-auto md:w-52 md:h-24">
@@ -64,10 +64,10 @@
     <div class="container mx-auto flex flex-col md:flex-row-reverse items-center py-0  md:px-0  mb-5" id="home" >
       <div class="w-full md:w-1/2 mt-10 md:mt-0 mb-10" >
         <img src="img/cover1.png" alt="cover1" class="w-full h-auto">
-      </div>  
-      <div class="w-full md:w-1/2 md:pr-10 pr-0 mt-15 ">
-          <h2 class="text-start text-3xl sm:text-4xl md:text-8xl font-bold mb-4 md:mb-10  ">Fresh <span class="text-4xl md:text-7xl">&</span> Tasty</h2>
-          <p class="mb-5 mt-5 text-lg md:mb-3">Freshness is our top priority. From our carefully sourced beans to our delectable pastries, we're dedicated to bringing you the tastiest treats made with the finest ingredients.</p>
+      </div> 
+      <div class="w-full md:w-1/2 p-5 ">
+          <h2 class="text-start text-3xl sm:text-4xl md:text-8xl  font-bold mb-4 md:mb-10   ">Fresh <span class="text-4xl md:text-7xl">&</span> Tasty</h2>
+          <p class="mb-5 mt-5 text-lg md:mb-3">Freshness is our top priority. From our carefully sourced beans to our delectable pastries, we're dedicated to bringing you the tastiest treats made with the finest ingredients.</p><br>
           <a href="#menu"  class="bg-red-400 hover:bg-red-300 text-white font-bold py-2 px-4 rounded mt-5">Go to Menu</a>
         </div>
        
@@ -119,8 +119,8 @@
       </div>
       
 
-      <div class="container mx-auto px-4 mt-2">
-        <img src="img/Menu4you2.png" alt="menu" class="w-full h-auto md:w-full md:h-auto lg:w-full lg:h-auto" alt="">
+      <div class="container mx-auto mt-2">
+        <img src="img/Menu4you2.png" alt="menu" class="w-full h-full md:w-full md:h-auto lg:w-full lg:h-auto" alt="">
       </div>
       
         <div class="text-center mt-10 text-gray-800 px-4 md:px-10 lg:px-20 xl:px-52 mb-20" id="aboutus">
@@ -181,9 +181,9 @@
 </main>
 <footer class="footer footer-center p-0 md:p-10 xl:md:p-10 bg-base-200 text-base-content rounded text-dark text-center" style="background-color: white;">
   <nav class="grid grid-flow-col gap-4 p-3">
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover" href="#aboutus">About us</a>
+      <a class="link link-hover" href="#product">Product</a>
+      <a class="link link-hover" href="#menu">Menu</a>
   </nav>
   <nav class="p-3">
       <div class="flex flex-row gap-4 justify-center items-center">
@@ -210,6 +210,7 @@
 </footer>
 
 <script>
+
   document.addEventListener('DOMContentLoaded', () => {
   const popup = document.getElementById('popup');
   const closeBtn = document.getElementById('close');
@@ -266,6 +267,7 @@ const menuButton = document.querySelector('button[aria-controls="mobile-menu"]')
             });
         });
 
+        
 </script>
 
   
